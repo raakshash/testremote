@@ -1,0 +1,24 @@
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="/pdf" method="GET">
+                <input type="submit" value="Get PDF">
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form action="/" method="GET">
+                <input type="submit" value="Return">
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+{{#each data}}
+<div class="row">
+    <div class="col-md-4">{{name}}</div>
+    <div class="col-md-4">{{email}}</div>
+    <div class="col-md-4">{{phone}}</div>
+</div>
+<hr>
+{{/each}}
