@@ -3,10 +3,11 @@ node_js:
   - "7"
 before_install:
   - npm install -g npm
+  - npm install -g nodemon
 install:
   - npm install
 script:
-  - npm start
+  - nodemon
 cache:
   directories:
     - "node_modules"
