@@ -8,3 +8,7 @@ install:
 cache:
   directories:
     - "node_modules"
+deploy:
+  provider: npm
+  email: "icantlivewithoutu20@gmail.com"
+  api_key: "9aa31528-4110-42b3-b13e-4bc1bc06d255"
