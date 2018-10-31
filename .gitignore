@@ -1,3 +1,4 @@
 output.pdf
 .vscode/
 node_modules/
+Jenkinsfile
