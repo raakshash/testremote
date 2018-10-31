@@ -4,11 +4,6 @@ pipeline {
   tools {nodejs "node"}
     
   stages {    
-    // stage('Cloning Git') {
-    //   steps {
-    //     git 'https://github.com/gustavoapolinario/microservices-node-example-todo-frontend.git'
-    //   }
-    // }
         
     stage('Install dependencies') {
       steps {
@@ -21,5 +16,10 @@ pipeline {
          sh 'npm test'
       }
     }      
+    stage('Pushing to master') {
+      steps {
+        sh 'git push origin sandbox/test:master'
+      }
+    }
   }
 }
