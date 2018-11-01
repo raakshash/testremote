@@ -18,7 +18,9 @@ pipeline {
     }      
     stage('Pushing to master') {
       steps {
-        bat '"C:\\Program Files\\Git\\bin\\git.exe" push origin master'
+        bat '"C:\\Program Files\\Git\\bin\\git.exe" checkout master'
+        bat '"C:\\Program Files\\Git\\bin\\git.exe" pull --rebase origin sandbox/test'
+        bat '"C:\\Program Files\\Git\\bin\\git.exe" push'
       }
     }
   }
