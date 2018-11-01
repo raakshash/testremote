@@ -7,6 +7,7 @@ pipeline {
         
     stage('Install dependencies') {
       steps {
+        sh 'npm cache clear --force'
         sh 'npm install'
       }
     }
