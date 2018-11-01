@@ -13,7 +13,7 @@ pipeline {
      
     stage('Test') {
       steps {
-         bat 'npm start &'
+         echo 'testing need to be configured'
       }
     }      
     stage('Pushing to master') {
