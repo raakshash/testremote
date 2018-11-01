@@ -7,18 +7,18 @@ pipeline {
         
     stage('Install dependencies') {
       steps {
-        sh 'npm install'
+        bat 'npm install'
       }
     }
      
     stage('Test') {
       steps {
-         sh 'npm test'
+         bat 'npm test'
       }
     }      
     stage('Pushing to master') {
       steps {
-        sh 'git push origin sandbox/test:master'
+        bat 'git push origin sandbox/test:master'
       }
     }
   }
