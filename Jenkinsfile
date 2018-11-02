@@ -18,7 +18,7 @@ pipeline {
     }      
     stage('Pushing to master') {
       steps {
-        bat '"C:\\Program Files\\Git\\bin\\git.exe" push origin --all'
+        bat '"C:\\Program Files\\Git\\bin\\git.exe" push origin sandbox/test'
       }
     }
   }
