@@ -4,15 +4,10 @@ pipeline {
   tools {nodejs "NodeJs"}
     
   stages {    
-    // stage('Cloning Git') {
-    //   steps {
-    //     git 'https://github.com/gustavoapolinario/microservices-node-example-todo-frontend.git'
-    //   }
-    // }
         
     stage('Install dependencies') {
       steps {
-        sh 'npm install'
+        bat 'npm install'
       }
     }
      

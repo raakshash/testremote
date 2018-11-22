@@ -1,3 +1,5 @@
 output.pdf
 .vscode/
 node_modules/
+Jenkinsfile
+package-lock.json

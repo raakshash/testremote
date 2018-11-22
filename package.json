@@ -16,7 +16,6 @@
     "morgan": "~1.9.0",
     "mustache": "^3.0.0",
     "pdfkit": "^0.8.3",
-    "pm2": "^3.2.2",
     "serve-favicon": "~2.4.5"
   }
 }
