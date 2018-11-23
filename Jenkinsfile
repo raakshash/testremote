@@ -7,7 +7,7 @@ pipeline {
         
     stage('Install dependencies') {
       steps {
-        bat 'npm install'
+        sh 'npm install'
       }
     }
      
